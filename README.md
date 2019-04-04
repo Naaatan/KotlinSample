@@ -4,7 +4,7 @@
 ## AppListActivity
 端末にインストールされているアプリ一覧をRecycleViewを使用して表示。
 
-## DrawLine
+## DrawLineActivity
 タッチ操作によるオブジェクト移動とオブジェクト間に線を引く。
 
 ## CameraCaptureActivity
@@ -13,3 +13,6 @@
 
 ## CameraCaptureActivity2
 [cameraview](https://github.com/google/cameraview)を使用したカメラ機能
+
+## Opencv
+OpenCVライブラリを使用して四角形のオブジェクトを認識するサンプル

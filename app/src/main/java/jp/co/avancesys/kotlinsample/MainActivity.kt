@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity(), RecycleViewHolder.ItemClickListener {
         private const val ACTIVITY_DRAW_LINE = "DrawLine"
         private const val ACTIVITY_CAMERA_CAPTURE = "CameraCapture"
         private const val ACTIVITY_CAMERA_CAPTURE2 = "CameraCapture2"
+        private const val ACTIVITY_OPENCV = "Opencv"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +31,9 @@ class MainActivity : AppCompatActivity(), RecycleViewHolder.ItemClickListener {
             ACTIVITY_APP_LIST,
             ACTIVITY_DRAW_LINE,
             ACTIVITY_CAMERA_CAPTURE,
-            ACTIVITY_CAMERA_CAPTURE2)
+            ACTIVITY_CAMERA_CAPTURE2,
+            ACTIVITY_OPENCV
+        )
 
         recyclerViewMenuList.adapter = RecyclerAdapter(this, this, menu)
         recyclerViewMenuList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
@@ -42,6 +45,7 @@ class MainActivity : AppCompatActivity(), RecycleViewHolder.ItemClickListener {
             ACTIVITY_DRAW_LINE -> startActivity(Intent(this, DrawLineActivity::class.java))
             ACTIVITY_CAMERA_CAPTURE -> startActivity(Intent(this, CameraCaptureActivity::class.java))
             ACTIVITY_CAMERA_CAPTURE2 -> startActivity(Intent(this, CameraCaptureActivity2::class.java))
+            ACTIVITY_OPENCV -> startActivity(Intent(this, OpencvActivity::class.java))
 
         }
     }

@@ -36,7 +36,7 @@ class DrawLineActivity : AppCompatActivity(), View.OnTouchListener {
             clearLines()
         }
 
-        switchTrackingLine.setOnCheckedChangeListener { compoundButton: CompoundButton, b: Boolean ->
+        switchTrackingLine.setOnCheckedChangeListener { _: CompoundButton, b: Boolean ->
             mTrackingLine = if (b) {
                 drawPointerLine(true)
             } else {
